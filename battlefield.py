@@ -4,8 +4,8 @@ from robot import Robot
 
 class Battlefield:
     def __init__(self):
-        self.dinosaur = Dinosaur
-        self.robot = Robot
+        self.dinosaur = Dinosaur('T-Rex', 100)
+        self.robot = Robot('Cyborg')
 
     def run_game(self):
         self.display_welcome()
@@ -16,9 +16,15 @@ class Battlefield:
         print('\nWelcome to Robot VS Dinosaur!\nOnly one will be victorious!\nWhich one will it be?\n')
 
     def battle_phase(self):
-        pass
+        while self.robot.health > 0:
+            if self.robot.health <= 0:
+                print(f'{self.dinosaur.name} has defeated {self.robot.name}')
+            self.robot.attack_dinosaur(self.dinosaur)
+            self.dinosaur.attack_robot(self.robot)
+           
+        
         
         
 
     def display_victor(self):
-        pass
+        print(f'{self.dinosaur.name} is victorious!')
