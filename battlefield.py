@@ -22,7 +22,14 @@ class Battlefield:
             self.robot.attack_dinosaur(self.dinosaur)
             self.dinosaur.attack_robot(self.robot)
            
-        
+    def battle_phase_two(self):
+        if self.robot.health > 0:
+            self.robot.attack_dinosaur(self.dinosaur)
+        elif self.dinosaur.health > 0:
+            self.dinosaur.attack_robot(self.robot)
+        else:
+            print(f'{self.dinosaur.name} is the winner!')
+
         
         
 
