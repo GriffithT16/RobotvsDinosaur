@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A worksheet to teach the concepts of Flexbox">
+    <meta name="keywords" content="">
+    <meta name="author" content="devCodeCamp">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="worksheet.css">
+    <title>devCodeCamp FlexBox Worksheet</title>
+</head>
+
+<body>
+
+    <section class="bottom-space">        
+        <header>
+            <img class="no-border" src="images/dccLogo.png" alt="devCodeCamp logo">
+            <h1 class="text header-text">Flexbox Worksheet</h1>        
+        </header>
+
+        <div class="intro-box">
+            <p class="text">
+                Each problem below consists of a static image file on the right and manipulatable HTML elements on the left. Each problem has its own container class in <b>worksheet.css</b>. Your goal is to alter the CSS classes in the <b>worksheet.css</b> file so that the image on the left matches the image on the right. You may not alter index.html or index.css to help achieve this, only <b>worksheet.css</b>!
+            </p>
+
+            <p class="text">
+                Once you have completed an image, edit the <b>index.html</b> with the property you used to arrive at the result. Add the property name inside the &lt;span class="answer"&gt; &lt;/span&gt;. This will leave you with a handy reference for what the different values do!
+            </p>
+
+            <p class="text">
+                Number One is a completed example. If you look in <b>worksheet.css</b>, you will see it is using the "align-items: flex-start" property.
+            </p>
+
+            <p class="text">
+                Each section focuses on a single flexbox property, though as the sheet continues, you may end up reusing some you have already seen, such as centering content. If multiple attributes are used to arrive at the result, only fill in the value of the property the section is focusing on.
+            </p>
+
+        </div>
+    </section>
+
+    <br>
+    <br>
+
+    <section>
+        <h2 class="text section-text">Section One: Align-Items</h2>
+        <br>
+        <h3 class="text">Number One: <span class="answer">flex-start</span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-1">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_1.png" alt="footballs on a field">
+            </div>
+        </div>
+        
+        <br>
+
+        <h3 class="text">Number Two: <span class="answer">flex-end</span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-2">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_2.png" alt="footballs on a field">
+            </div>
+        </div>
+
+        <br>
+        
+        <h3 class="text">Number Three: <span class="answer">center</span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-3">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_3.png" alt="footballs on a field">
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <br>
+    <br>
+    
+    <section>
+        <h2 class="text section-text">Section Two: Justify-Content</h2>
+        <br>
+        <h3 class="text">Number Four: <span class="answer">flex-end;center</span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-4">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_4.png" alt="footballs on a field">
+            </div>
+        </div>
+        
+        <br>
+
+        <h3 class="text">Number Five: <span class="answer">align-items: center;justify-content: center; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-5">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_5.png" alt="footballs on a field">
+            </div>
+        </div>
+        
+        <br>
+
+        <h3 class="text">Number Six: <span class="answer">justify-content: space-evenly;align-items: center; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-6">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_6.png" alt="footballs on a field">
+            </div>
+        </div>
+        
+        <br>
+
+        <h3 class="text">Number Seven: <span class="answer">align-items: center; justify-content: space-around; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-7">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_7.png" alt="footballs on a field">
+            </div>
+        </div>
+        
+        <br>
+
+        <h3 class="text">Number Eight: <span class="answer">align-items: center; justify-content: space-between; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-8">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_8.png" alt="footballs on a field">
+            </div>
+        </div>
+
+
+        <br>    
+
+        <h3 class="text">Number Nine: <span class="answer">align-items: flex-end; flex-direction: row-reverse; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-9">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_9.png" alt="footballs on a field">
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    <br>
+    <br>
+
+    <section>
+        <h2 class="text section-text">Section Three: Flex-Wrap</h2>
+        <br>
+        <h3 class="text">Number Ten: <span class="answer">flex-wrap: wrap; justify-content: space-evenly; align-items: center; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-10">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_10.png" alt="footballs on a field">
+            </div>
+        </div>
+        
+        <br>
+
+        <h3 class="text">Number Eleven: <span class="answer">flex-wrap: wrap; justify-content: space-evenly; align-items: center; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-11">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football nerf"><strong class="stitching nerf-stitch">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_11.png" alt="footballs on a field">
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    <br>
+    <br>
+
+    <section>
+        <h2 class="text section-text">Section Four: Align-Self & Order</h2>
+        <br>
+        <p class="text intro-box">
+            In this section, you will need to add properties to both the container itself, as well as the 'nerf' class which represents the styling of the blue football. Properties applied to the container class will affect everything within the container, while applying 'align-self' and/or 'order' to the 'nerf' class will only affect the blue football.
+        </p>
+        <h3 class="text">Number Twelve: <span class="answer">align-self: flex-end; align-items: center; justify-content: space-evenly; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-12">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football nerf-12"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_12.png" alt="footballs on a field">
+            </div>
+        </div>
+        
+        <br>
+
+        <h3 class="text">Number Thirteen: <span class="answer">align-items: center; justify-content: space-evenly; flex-direction: row-reverse; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-13">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football nerf-13"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_13.png" alt="footballs on a field">
+            </div>
+        </div>
+
+        <br>
+
+        <h3 class="text">Number Fourteen: <span class="answer">align-self: flex-start; flex-direction: row-reverse; align-items: center; justify-content: space-evenly; </span></h3>
+        <hr>
+        <br>
+        <div class="flex-container">
+            <div class="flex-left">
+                <div class="field container-14">
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football"><strong class="stitching">I I I I I I</strong></div>
+                    <div class="football nerf-14"><strong class="stitching">I I I I I I</strong></div>
+                </div>
+            </div>
+            <div class="flex-right">
+                <img src="images/image_14.png" alt="footballs on a field">
+            </div>
+        </div>
+    </section>   
+
+    <br>
+    <br>
+
+</html>
